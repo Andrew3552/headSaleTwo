@@ -1,0 +1,19 @@
+.frame {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+  position: absolute;
+  text-align: center;
+  font-size: clamp (10px, 1.9vw, 20px);
+
+  @media (width > 600px) {
+    border: 3px solid #fff;
+  }
+}
+
+.firstFrame {
+  left: 0px;
+  top: 200px;
+  max-width: clamp(193px, 39vw, 478px);
+
+}

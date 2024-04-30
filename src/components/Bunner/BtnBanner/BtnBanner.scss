@@ -1,0 +1,124 @@
+.btnBanner {
+  position: relative;
+  background: linear-gradient(
+    46.4deg,
+    rgb(201, 151, 85) 0%,
+    rgb(241, 203, 155) 44.234%,
+    rgb(242, 218, 180) 59.476%,
+    rgb(201, 151, 85) 104.835%
+  );
+  padding: 20px 80px;
+  border-radius: 30px;
+  color: rgb(128, 78, 30);
+  font-size: clamp(16px, 1.8vw, 24px);
+  line-height: clamp(16px, 2.8vw, 24px);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Unbounded-500';
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+
+  @media (width > 600px) {
+    padding: 8px 40px 8px 18px;
+  }
+
+  @media (width > 1200px) {
+    max-width: 600px;
+    border-radius: 1000px;
+    padding: 35px 80px;
+  }
+}
+
+.btnBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_rr {
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnBanner_duobts {
+  color: rgb(128, 78, 30);
+  font-size: 19px;
+  font-weight: 600;
+  padding: 23px;
+  text-align: center;
+  background: linear-gradient(
+    46.4deg,
+    rgb(201, 151, 85) 0%,
+    rgb(241, 203, 155) 44.222%,
+    rgb(242, 218, 180) 59.46%,
+    rgb(201, 151, 85) 104.808%
+  );
+
+  @media (width > 768px) {
+    font-size: 24px;
+  }
+}
+
+.btnBanner__way_desk {
+  text-align: center;
+  color: rgb(128, 78, 30);
+  background: linear-gradient(
+    46.4deg,
+    rgb(201, 151, 85) 0%,
+    rgb(241, 203, 155) 44.257%,
+    rgb(242, 218, 180) 59.507%,
+    rgb(201, 151, 85) 104.89%
+  );
+}
+
+.courseProgram__btn_wrapper {
+  margin-bottom: 150px;
+}
+
+.btnBanner__wrapper_duobts {
+  position: absolute;
+  bottom: 15px;
+}
+
+.banner_btn_wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  @media (width > 767px) {
+    top: 65%;
+  }
+}
+
+.btnBanner__banner {
+  color: rgb(128, 78, 30);
+  font-family: 'Unbounded-700';
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 90px;
+  width: 300px;
+  padding: 20px 10px;
+  z-index: 15;
+
+
+ 
+  @media (width > 1200px) {
+    font-size: 36px;
+    padding: 50px 100px;
+  }
+  @media (width > 1023px) {
+    width: 450px;
+    padding: 30px;
+  }
+
+}

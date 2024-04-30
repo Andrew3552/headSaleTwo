@@ -1,0 +1,219 @@
+.avtor__container {
+  @media (min-width: 1170px) {
+    background-image: url('../../assets/bgBig.webp');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: center;
+  }
+}
+.avtor__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  &_span {
+    text-transform: uppercase;
+    color: rgb(244, 201, 123);
+    @media (width<860px) {
+      font-size: 24px;
+      margin-bottom: 57px;
+    }
+    @media (width>860px) {
+      font-size: 36px;
+      line-height: 1;
+    }
+  }
+  &.two {
+    margin: 0 auto 91px;
+    @media (width<860px) {
+      display: none;
+    }
+    @media (width>861px) {
+      font-size: 48px;
+      width: 50%;
+    }
+  }
+  &.one {
+    width: 320px;
+    margin: 0 auto 45px;
+    @media (859px<width<1940px) {
+      display: none;
+    }
+  }
+  &.three {
+    @media (min-width: 1170px) {
+      margin: 0;
+      font-size: 48px;
+    }
+  }
+}
+
+.avtor__list {
+  list-style-type: none;
+  padding: 0;
+  @media (min-width: 1700px) {
+    width: 58%;
+  }
+}
+
+.avtor__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  @media (min-width: 1170px) {
+    width: 80%;
+    margin-bottom: 52px;
+  }
+  &_text {
+    @media (min-width: 1170px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.avtor__item img {
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  @media (min-width: 1170px) {
+    width: 47px;
+    height: 47px;
+  }
+}
+.img__owner {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  top: 25px;
+  transform: scale(0.8);
+  @media (min-width: 1170px) {
+    display: none;
+  }
+  &_avatar {
+    display: none;
+    @media (min-width: 1170px) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+
+      transform: scale(1);
+      background-color: transparent;
+    }
+  }
+}
+
+.img__owner img {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1.3);
+  @media (min-width: 1700px) {
+    transform: translate(-50%, 50%);
+  }
+}
+.link__owner {
+  padding: 5px 15px 5px 65px;
+  display: inline-block;
+  width: 81%;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #e21b1b;
+  font-size: 18px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 30px rgba(226, 27, 27, 1);
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  @media (min-width: 1170px) {
+    width: 64%;
+    font-size: 36px;
+  }
+  @media (min-width: 1200px) {
+    width: 64%;
+    font-size: 36px;
+  }
+}
+
+.owner__box {
+  background-image: url('../../assets/bg-avtor.webp');
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  @media (min-width: 1170px) {
+    background-image: none;
+  }
+
+  &_info {
+    @media (min-width: 1170px) {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+    }
+    @media (1240px<width) {
+      top: 70%;
+    }
+  }
+
+  &_order {
+    display: grid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1;
+    @media (min-width: 1170px) {
+      top: 52%;
+      width: 75%;
+    }
+    @media (1240px<width) {
+      top: 77%;
+    }
+  }
+}
+.owner__text {
+  text-align: center;
+  margin: 11px 0 13px;
+  position: relative;
+  top: 10%;
+  font-size: 15px;
+  @media (min-width: 1170px) {
+    order: 2;
+    font-size: 24px;
+  }
+}
+.red_liner {
+  width: 33px;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  @media (min-width: 1170px) {
+    width: 47px;
+    top: 9px;
+  }
+  @media (1240px>width) {
+    top: 10%;
+  }
+}
+.avtor__order {
+  @media (min-width: 1170px) {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+.cloud {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}

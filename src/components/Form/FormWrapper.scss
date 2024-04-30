@@ -1,0 +1,140 @@
+.form {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px 10px;
+  padding: 16px;
+  width: 100%;
+  background: var(--redGradientForm);
+  border-radius: 0px 0px 10px 10px;
+  z-index: 7;
+  @media (width < 768px) {
+    top: 10px;
+    width: 100%;
+    padding: 16px;
+  }
+  
+
+  input {
+    // max-width: 388px;
+    min-height: 44px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255, 0.4);
+    color: white;
+  }
+  &__input {
+    background: transparent;
+    width: 100%;
+  }
+  &__submit {
+    color: #e21b1b;
+    font-size: 16px;
+    background: var(--redGradient);
+    border-color: var(--goldGradient);
+    margin-bottom: 22px;
+  }
+}
+
+.form_tariff {
+  top: 75px;
+  z-index: 4;
+  padding: 16px;
+
+  @media (width > 768px) {
+    top: 110px;
+    left: -38px;
+    width: 350px;
+  }
+}
+
+.form_banner {
+  top: 80px;
+
+  @media (width > 1200px) {
+    top: 100px;
+  }
+}
+
+.form__input_tariff {
+  width: 100%;
+  background: transparent;
+}
+
+.form__input_submit {
+  width: 100%;
+}
+
+.wrapper_rr {
+  position: relative;
+}
+
+.form__submit:hover {
+  color: #e21b1b;
+  background: white;
+  border-color: var(--goldGradient);
+}
+
+.form__select {
+  padding: 12px;
+  max-width: 105px;
+  background-color: transparent;
+  font-size: 13px;
+  border-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: white;
+}
+
+.form__input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form__input_phone input {
+  background-color: transparent !important;
+}
+
+.my-input-class {
+  border: none !important;
+}
+
+.my-button-class {
+  color: black !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.my-input-class {
+  background-color: transparent !important;
+  color: white !important;
+  font-size: 20px;
+}
+
+// .countryCode{
+//   display: flex;
+//   align-items: center;
+// }
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  /* Добавьте другие стили, которые вы хотите применить к сообщению об ошибке */
+}
+
+.form__select option {
+  background-color: transparent !important; /* Цвет фона опций */
+  color: #333; /* Цвет текста опций */
+}
+
+.form__doubts_wrapper{
+  top: 75px;
+
+  @media (width > 1200px) {
+    top: 85px;
+  }
+}

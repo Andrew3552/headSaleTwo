@@ -1,0 +1,99 @@
+@import '../../../styles/variables';
+
+.bonus__container {
+  background-image: url(../../../assets/bonusb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 330px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: -200px;
+  z-index: -1;
+
+  @media (width < 1630px) {
+    margin-top: 0px;
+  }
+
+  @media (width > 600px) {
+    max-width: 400px;
+  }
+
+  .divBorder {
+    border: 2px solid #fff;
+    text-align: start;
+    backdrop-filter: blur(10px);
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow:
+      0 1px 0 rgba(255, 194, 102, .25),
+      0 -1px 0 rgba(249, 229, 171, .25),
+      1px 0 0 rgba(255, 194, 102, .25),
+      -1px 0 0 rgba(249, 229, 171, .25),
+      1px -1px 0 rgba(255, 221, 191, .5),
+      -1px 1px 0 rgba(255, 221, 191, .5),
+      1px 1px 0 rgba(255, 194, 102, .75),
+      -1px -1px 0 rgba(249, 201, 123, .75);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Unbounded-200';
+  }
+}
+
+.bonus__container .div1 {
+  width: 100%;
+  @extend %textGoldGradient;
+  font-family: 'Unbounded-400';
+  text-align: center;
+  padding: 13px 31px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.bonus__container .div4 {
+  height: clamp(94px, 15.9vw, 110px);
+  width: 50%;
+
+}
+
+.bonus__container .div5 {
+  height: clamp(94px, 15.9vw, 110px);
+  width: 50%;
+}
+
+.bonus__container .div3 {
+  height: clamp(94px, 15.9vw, 110px);
+  width: 50%;
+}
+
+.bonus__container .div2 {
+  height: clamp(94px, 15.9vw, 110px);
+  width: 50%;
+}
+
+.readCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(55px, 9vw, 59px);
+  min-width: clamp(55px, 9vw, 59px);
+  height: clamp(55px, 9vw, 59px);
+  background-color: #E21B1B;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.readCircle__textMini {
+  font-size: 11px;
+  line-height: 11px;
+  margin: 0;
+  padding: 0;
+}

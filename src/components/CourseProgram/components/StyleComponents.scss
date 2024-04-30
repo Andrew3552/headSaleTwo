@@ -1,0 +1,214 @@
+.courseProgram__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_btn {
+    border-radius: 1000px;
+    background: linear-gradient(
+      46.4deg,
+      rgb(201, 151, 85) 0%,
+      rgb(241, 203, 155) 44.234%,
+      rgb(242, 218, 180) 59.476%,
+      rgb(201, 151, 85) 104.835%
+    );
+    border: none;
+    padding: 20px;
+    width: 100%;
+    color: rgb(128, 78, 30);
+    font-family: 'Unbounded-700';
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (width > 767px) {
+      width: 626px;
+      font-size: 26px;
+      padding: 30px;
+    }
+
+    @media (width > 1200px) {
+      width: 748px;
+      font-size: 36px;
+      padding: 40px;
+        
+    }
+  }
+
+  &-block {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    border-radius: 10px;
+    background: rgb(226, 27, 27);
+    margin-bottom: 40px;
+
+    @media (width > 767px) {
+      max-width: 526px;
+      padding: 20px 0;
+    }
+    &_img {
+      margin-left: 15px;
+      color: rgb(226, 27, 27);
+      font-family: 'Unbounded-600';
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      background: white;
+      border-radius: 60px;
+      padding: 10px;
+
+      @media (width > 768px) {
+        font-size: 40px;
+      }
+    }
+
+    &-title {
+      font-family: 'Unbounded-500';
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+
+      @media (width > 768px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+
+    &-list {
+      position: relative;
+      max-width: 321px;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      border-radius: 10px;
+      background: rgb(249, 246, 246);
+      padding: 15px;
+
+      @media (width > 768px) {
+        grid-template-columns: 100px 1fr;
+        min-width: 800px;
+        padding: 17px 57px 40px 20px;
+      }
+
+      @media (width > 1200px) {
+        min-width: 948px;
+      }
+
+      &_icon {
+        .img-container {
+          .img__block_icon {
+            width: 40px;
+            background: rgb(226, 27, 27);
+            padding: 10px;
+            border-radius: 50px;
+            color: white;
+
+            @media (width > 768px) {
+              width: 70px;
+              padding: 15px;
+                
+            }
+          }
+        }
+      }
+
+      .courseProgram__block-module {
+        grid-column: 1/4;
+        grid-row: 2/3;
+
+        @media (width > 768px) {
+          grid-column: 2/4;
+          grid-row: 2/3;
+            
+        }
+        &_item {
+          position: absolute;
+          top: -38px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+          padding: 18px 28px;
+          border-radius: 10px;
+          background: linear-gradient(
+            46.4deg,
+            rgb(201, 151, 85) 0%,
+            rgb(241, 203, 155) 42.545%,
+            rgb(242, 218, 180) 57.204%,
+            rgb(201, 151, 85) 100.831%
+          );
+
+          @media (width > 768px) {
+            transform: rotate(270deg);
+            top: 90px;
+            left: -90px;
+          
+            
+          }
+          &-text {
+            color: rgb(128, 78, 30);
+            font-family: 'Unbounded-500';
+            font-size: 15px;
+            line-height: 120%;
+          }
+        }
+
+        &_title {
+          display: flex;
+          align-items: center;
+          color: rgb(226, 27, 27);
+          font-family: 'Unbounded-600';
+          font-size: 18px;
+          line-height: 120%;
+          text-align: left;
+          grid-column: 2/4;
+          grid-row: 1/2;
+          @media (width > 768px) {
+            font-size: 32px;
+          }
+        }
+
+        &_img{
+            width: 40px;
+        }
+
+        .connecting-line {
+          height: 1px;
+          display: none;
+          @media (width > 768px) {
+            display: block;
+            width: 100%;
+            
+          }
+        }
+        &-text {
+          margin-top: 30px;
+          .block__text {
+            font-family: 'Unbounded-600';
+            font-size: 13px;
+            line-height: 150%;
+            color: black;
+
+            @media (width > 768px) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.courseProgram__block-module_svg{
+    display: flex;
+    justify-content: space-between;
+}

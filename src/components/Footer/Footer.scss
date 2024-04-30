@@ -1,0 +1,137 @@
+@import '../../styles/_variables.scss';
+
+.footer {
+  background: #151515;
+  &__container {
+    @media (width<=430px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 20px auto;
+      padding: 26px 0 20px;
+    }
+
+    @media (width>430px) {
+      margin: 0 auto;
+      padding: 42px 60px 28px;
+    }
+    @media (width>767px) {
+    
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 33px;
+
+    @media (width<=430px) {
+      font-size: 20px;
+    }
+  }
+
+  &__demark {
+    text-transform: uppercase;
+    @extend %textGoldGradient;
+    font-size: 11px;
+    width: 114px;
+    font-weight: 500;
+    @media (width>860px) {
+      font-size: 15px;
+      width: auto;
+    }
+  }
+
+  &__mark {
+    font-size: 13px;
+    align-self: flex-end;
+    text-align: right;
+    font-weight: 500;
+    @media (width>860px) {
+      font-size: 20px;
+      width: auto;
+    }
+  }
+
+  &__list_contact {
+    list-style: none;
+    padding-inline-start: 0;
+    font-size: 11px;
+    @media (width<860px) {
+      padding: 0;
+      
+      font-size: 13px;
+      text-align: center;
+    }
+    @media(width>1100px) {
+      font-size: 14px;
+    }
+
+    & li {
+      padding: 0 5px 23px;
+    }
+  }
+
+  &__list_info {
+    list-style: none;
+    padding: 0 0 29px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: center;
+    & li {
+      padding: 0 5px 23px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  &__order {
+    
+    @media (min-width: 860px) {
+      
+display: flex;
+      justify-content: space-around;
+      .order {
+        width: 33%;
+      }
+      .order:nth-child(1) {
+        order: 2;
+      }
+      .order:nth-child(2) {
+        order: 1;
+      }
+      .order:nth-child(3) {
+        order: 3;
+      }
+    }
+  }
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  border-radius: 100px;
+  width: 248px;
+  height: 56px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1000px) {
+    width: 283px;
+    height: 74px;
+
+    font-size: 30px;
+  }
+}
+
+.link.telegram {
+  background-color: #e21b1b;
+  color: #ffffff;
+}
+
+.link.instagram {
+  background-color: #ffffff;
+  color: #0a0a0a;
+}

@@ -1,0 +1,13 @@
+%textGoldGradient {
+  background: var(--goldGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%blockRedGradient {
+  background: var(--redGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// @import '../styles/variables';
+// @extend %textGoldGradient; 

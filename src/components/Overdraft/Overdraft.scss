@@ -1,0 +1,195 @@
+.overdraft {
+  overflow: hidden;
+  &__title {
+    font-family: 'Unbounded-400';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @media screen and (width > 1200px) {
+      font-size: 64px;
+      line-height: 79px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+    @media (width > 768px) {
+      flex-direction: row;
+      gap: 300px;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    &-text {
+        max-width: 900px;
+        
+      &_parts {
+        border-radius: 5px;
+        background: linear-gradient(126.77deg, rgb(247, 1, 0) -3.549%, rgb(149, 11, 20) 86.623%);
+        font-family: 'Unbounded-400';
+        font-size: 18px;
+        line-height: 124%;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 31px;
+        @media (width > 768px) {
+          font-size: 22px;
+          line-height: 110%;
+          margin-bottom: 97px;
+        }
+      }
+      &_container-percents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        @media (width > 768px) {
+          margin-bottom: 37px;
+            
+        }
+        &-text {
+          font-family: 'Unbounded-400';
+          font-size: 16px;
+          line-height: 130%;
+          text-align: center;
+          margin-left: 17px;
+          @media (width > 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+      &_overdraft {
+        border-radius: 1000px;
+        background: rgb(255, 255, 255);
+        color: rgb(226, 27, 27);
+        font-family: 'Unbounded-700';
+        font-size: 18px;
+        line-height: 75px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+        @media (width > 768px) {
+          font-size: 32px;
+          margin-top: 65px;
+        }
+      }
+
+      &_container-feedback {
+        display: flex;
+        align-items: start;
+        margin-bottom: 14px;
+        @media (width > 768px) {
+          margin-bottom: 35px;
+            
+        }
+        &-text {
+          font-family: 'Unbounded-400';
+          font-size: 16px;
+          line-height: 130%;
+          text-align: left;
+          margin-left: 17px;
+          @media (width > 768px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      &_telegram {
+        border-radius: 1000px;
+        background: linear-gradient(
+          46.4deg,
+          rgb(201, 151, 85),
+          rgb(241, 203, 155) 44.228%,
+          rgb(242, 218, 180) 59.468%,
+          rgb(201, 151, 85) 104.822%
+        );
+        color: rgb(128, 78, 30);
+        font-family: 'Unbounded-700';
+        font-size: 18px;
+        line-height: 75px;
+        text-align: center;
+        text-transform: uppercase;
+        @media (width > 768px) {
+          font-size: 32px;
+        }
+      }
+    }
+
+    &-img_mob {
+      @media (width > 768px) {
+        display: none;
+      }
+    }
+
+    &-img {
+      display: none;
+      @media (width > 768px) {
+        display: block;
+        width: 700px;
+      }
+    }
+
+    &-ellipse_right {
+      position: absolute;
+      top: -170px;
+      right: -20px;
+      width: 450px;
+      z-index: -2;
+    }
+
+    &-ellipse_left {
+      position: absolute;
+      bottom: -120px;
+      left: -20px;
+      width: 450px;
+      z-index: -2;
+    }
+
+    &-star_right {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      z-index: -1;
+    }
+
+    &-star_left {
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      z-index: -1;
+    }
+
+    &-grayTGMob1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    &-grayTGMob2 {
+      position: absolute;
+      top: 57%;
+      left: 57%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      z-index: -1;
+    }
+
+    &-grayTGMob3 {
+      position: absolute;
+      top: 65%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      width: 190px;
+      z-index: -1;
+    }
+  }
+}

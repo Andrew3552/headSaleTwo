@@ -1,0 +1,535 @@
+// .wayTrainings {
+//   margin-bottom: 130px;
+//   display: none;
+// }
+
+.wayTraining {
+  padding-top: 70px;
+  margin-bottom: 130px;
+
+  @media screen and (width > 768px) {
+    margin: 75px 0 75px;
+  }
+
+  @media screen and (width > 1250px) {
+    margin: 80px 0 75px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+    margin-bottom: 100px;
+    @media (width > 768px) {
+      align-items: center;
+    }
+    &_title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 70px;
+    }
+
+    &_img-container {
+      position: relative;
+
+      @media (width > 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .line {
+        height: 800px;
+        display: block;
+
+        @media (width > 768px) {
+          display: none;
+        }
+      }
+
+      .desk {
+        display: none;
+        @media (width > 768px) {
+          display: block;
+          max-width: 768px;
+          height: 400px;
+        }
+        @media (width > 1250px) {
+          display: block;
+          max-width: 1200px;
+          height: 560px;
+        }
+      }
+
+      .airplane {
+        width: 110px;
+        position: absolute;
+        top: -65px;
+        left: -90px;
+        z-index: 1;
+
+        @media (width > 768px) {
+          width: 90px;
+          top: -50px;
+          left: -100px;
+        }
+
+        @media (width > 1250px) {
+          width: 130px;
+          top: -40px;
+          left: -175px;
+        }
+      }
+
+      .circle {
+        position: absolute;
+        width: 100px;
+        left: 20px;
+
+        @media (width > 768px) {
+          width: 70px;
+        }
+
+        @media (width > 1250px) {
+          width: 110px;
+        }
+      }
+
+      .key {
+        position: absolute;
+        width: 160px;
+
+        @media (width > 768px) {
+          width: 130px;
+        }
+        @media (width > 1250px) {
+          width: 180px;
+        }
+      }
+
+      .one {
+        top: -750px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -394px;
+          left: -306px;
+        }
+
+        @media (width > 1250px) {
+          top: -560px;
+          left: -480px;
+        }
+      }
+
+      .K_one {
+        top: -780px;
+        left: -60px;
+
+        @media (width > 768px) {
+          top: -425px;
+          left: -330px;
+        }
+
+        @media (width > 1250px) {
+          top: -600px;
+          left: -510px;
+        }
+      }
+
+      .two {
+        top: -610px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -318px;
+          left: -65px;
+        }
+
+        @media (width > 1250px) {
+          top: -455px;
+          left: -105px;
+        }
+      }
+
+      .K_two {
+        top: -640px;
+        left: -60px;
+
+        @media (width > 768px) {
+          top: -350px;
+          left: -90px;
+        }
+
+        @media (width > 1250px) {
+          top: -500px;
+          left: -140px;
+        }
+      }
+
+      .three {
+        top: -470px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -393px;
+          left: 145px;
+        }
+
+        @media (width > 1250px) {
+          top: -560px;
+          left: 230px;
+        }
+      }
+
+      .K_three {
+        top: -500px;
+        left: -60px;
+
+        @media (width > 768px) {
+          top: -425px;
+          left: 120px;
+        }
+        @media (width > 1250px) {
+          top: -600px;
+          left: 200px;
+        }
+      }
+
+      .four {
+        top: -330px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -185px;
+          left: 304px;
+        }
+        @media (width > 1250px) {
+          top: -265px;
+          left: 480px;
+        }
+      }
+
+      .K_four {
+        top: -360px;
+        left: -60px;
+
+        @media (width > 768px) {
+          top: -220px;
+          left: 280px;
+        }
+
+        @media (width > 1250px) {
+          top: -300px;
+          left: 450px;
+        }
+      }
+
+      .five {
+        top: -190px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -68px;
+          left: 45px;
+        }
+
+        @media (width > 1250px) {
+          top: -95px;
+          left: 72px;
+        }
+      }
+
+      .K_five {
+        top: -220px;
+        left: -60px;
+
+        @media (width > 768px) {
+          top: -97px;
+          left: 20px;
+        }
+
+        @media (width > 1250px) {
+          top: -130px;
+          left: 40px;
+        }
+      }
+
+      .six {
+        top: -50px;
+        left: -32px;
+
+        @media (width > 768px) {
+          top: -68px;
+          left: -365px;
+        }
+        @media (width > 1250px) {
+          top: -98px;
+          left: -570px;
+        }
+      }
+
+      .closedLock {
+        position: absolute;
+        top: -46px;
+        left: -20px;
+        max-width: 70px;
+
+        @media (width > 768px) {
+          top: -69px;
+          left: -360px;
+          max-width: 55px;
+        }
+
+        @media (width > 1250px) {
+          top: -100px;
+          left: -560px;
+          max-width: 85px;
+        }
+      }
+
+      .openLock {
+        position: absolute;
+        top: -45px;
+        left: -28px;
+        max-width: 95px;
+        // display: none;
+
+        @media (width > 768px) {
+          top: -59px;
+          left: -360px;
+          max-width: 65px;
+        }
+
+        @media (width > 1250px) {
+          top: -82px;
+          left: -560px;
+          max-width: 95px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.controlPoint {
+  position: relative;
+
+  &__text_one,
+  &__text_two,
+  &__text_three,
+  &__text_four,
+  &__text_five,
+  &__text_six {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 5px;
+    background: linear-gradient(
+      136.12deg,
+      rgb(201, 151, 85) 7.236%,
+      rgb(249, 229, 171) 63.131%,
+      rgb(255, 194, 102) 79.748%,
+      rgb(244, 201, 123) 107.947%
+    );
+    position: absolute;
+    color: rgb(128, 78, 30);
+    padding: 10px;
+    width: 220px;
+    opacity: 0; // сделать текст невидимым по умолчанию
+    animation: slideInFromLeft 1s forwards, fadeIn 3s forwards;
+
+    @media (width > 768px) {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      width: 170px;
+      text-align: center;
+    }
+
+    @media (width > 1250px) {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+
+  &__text_one {
+    top: -720px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -330px;
+      left: -380px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+    }
+    @media (width > 1250px) {
+      top: -470px;
+      left: -575px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+      width: 250px;
+    }
+  }
+
+  &__text_two {
+    top: -610px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -265px;
+      left: -170px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+      width: 230px;
+    }
+
+    @media (width > 1250px) {
+      top: -360px;
+      left: -230px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+      width: 350px;
+    }
+  }
+
+  &__text_three {
+    top: -460px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -340px;
+      left: 107px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+      width: 230px;
+    }
+
+    @media (width > 1250px) {
+      top: -470px;
+      left: 195px;
+      animation: slideInFromTop 1s forwards, fadeIn 3s forwards;
+      width: 300px;
+    }
+  }
+
+  &__text_four {
+    top: -330px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -170px;
+      left: 325px;
+      animation: slideInFromRight 1s forwards, fadeIn 3s forwards;
+      width: 230px;
+    }
+
+    @media (width > 1250px) {
+      top: -280px;
+      left: 505px;
+      animation: slideInFromRight 1s forwards, fadeIn 3s forwards;
+      width: 300px;
+    }
+  }
+
+  &__text_five {
+    top: -200px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -58px;
+      left: -190px;
+      animation: slideInFromDown 1s forwards, fadeIn 3s forwards;
+      width: 274px;
+    }
+    @media (width > 1250px) {
+      top: -85px;
+      left: -220px;
+      animation: slideInFromDown 1s forwards, fadeIn 3s forwards;
+      width: 400px;
+    }
+  }
+
+  &__text_six {
+    top: -40px;
+    left: 125px;
+
+    @media (width > 768px) {
+      top: -58px;
+      left: -405px;
+      animation: slideInFromDown 1s forwards, fadeIn 3s forwards;
+      width: 205px;
+    }
+    @media (width > 1250px) {
+      top: -85px;
+      left: -655px;
+      animation: slideInFromDown 1s forwards, fadeIn 3s forwards;
+      width: 295px;
+    }
+  }
+
+  .strong {
+    font-weight: 700;
+  }
+}
+
+.controlPoint.active .controlPoint__text_one,
+.controlPoint.active .controlPoint__text_two,
+.controlPoint.active .controlPoint__text_three,
+.controlPoint.active .controlPoint__text_four,
+.controlPoint.active .controlPoint__text_five,
+.controlPoint.active .controlPoint__text_six {
+  opacity: 1; // сделать текст видимым, когда controlPoint активен
+}
+
+// const [started, setStarted] = useState(false);
+
+// setStarted(true);
+
+.line-r {
+  position: relative;
+}

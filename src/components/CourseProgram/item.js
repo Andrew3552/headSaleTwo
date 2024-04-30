@@ -127,7 +127,7 @@ export const item2 = [
     {
         img: sec1Book,
         module: '8 модуль',
-        nameModule: 'Менеджер з продажу реклами',
+        nameModule: 'Медіа-баєр',
         lesson1: 'Урок 1: Де шукати роботу медіа-баєром',
         lesson1HighLight: 'Урок 1:',
         lesson2: 'Урок 2: Створення робочих креативів',

@@ -6,11 +6,8 @@ import Vector from '../../../assets/courseProgram/Vector.svg';
 
 import BtnBanner from '../../Bunner/BtnBanner/BtnBanner';
 
-export default function Base({ highlightWord, visibleItems, isButtonClicked, setVisibleItems, setIsButtonClicked }) {
-  const handleClick = () => {
-    setVisibleItems(item.length); // при клике показываем все элементы
-    setIsButtonClicked(true); // устанавливаем, что кнопка была нажата
-  };
+export default function Base({ highlightWord }) {
+
 
   return (
     <div className="courseProgram__wrapper">
@@ -19,7 +16,7 @@ export default function Base({ highlightWord, visibleItems, isButtonClicked, set
         <h3 className="courseProgram__wrapper-block-title">Блок: База</h3>
       </div>
       <Wrapper courseProgramContainer>
-        {item.slice(0, visibleItems).map((item, index) => (
+        {item.map((item, index) => (
           <List courseProgramWrapperList key={index}>
             <div className="courseProgram__wrapper_container-list_icon">
               <div className={`img-container img-container-${index}`}>
@@ -53,11 +50,7 @@ export default function Base({ highlightWord, visibleItems, isButtonClicked, set
             </div>
           </List>
         ))}
-        {isButtonClicked && <BtnBanner courseWrapperBtn buttonText="Забронювати місце" />}
       </Wrapper>
-      <button className="courseProgram__wrapper_btn" onClick={handleClick}>
-        відкрити всі модулі
-      </button>
     </div>
   );
 }

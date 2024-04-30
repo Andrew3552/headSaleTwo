@@ -1,25 +1,22 @@
+import { useState } from 'react';
+
 import Wrapper from '../../WrapperList/Wrapper';
 import List from '../../WrapperList/List';
-
-import { item3} from '../item';
-
 import BtnBanner from '../../Bunner/BtnBanner/BtnBanner';
+import FormWrapper from '../../Form/FormWrapper';
 
-export default function Base({ highlightWord, visibleItems, isButtonClicked,setVisibleItems, setIsButtonClicked }) {
+import { item3 } from '../item';
 
-  const handleClick = () => {
-    setVisibleItems(item3.length); // при клике показываем все элементы
-    setIsButtonClicked(true); // устанавливаем, что кнопка была нажата
-  };
-
+export default function Base({ highlightWord, className }) {
+  const [isFormOpen, setIsFormOpen] = useState(false);
   return (
-    <div className="courseProgram__wrapper">
+    <div className={`courseProgram__wrapper ${className}`}>
       <div className="courseProgram__wrapper-block">
         <div className="courseProgram__wrapper-block_img">03</div>
         <h3 className="courseProgram__wrapper-block-title">Блок: Бізнес</h3>
       </div>
       <Wrapper courseProgramContainer>
-        {item3.slice(0, visibleItems).map((item, index) => (
+        {item3.map((item, index) => (
           <List courseProgramWrapperList key={index}>
             <div className="courseProgram__wrapper_container-list_icon">
               <div className={`img-container img-container-${index}`}>
@@ -50,9 +47,12 @@ export default function Base({ highlightWord, visibleItems, isButtonClicked,setV
             </div>
           </List>
         ))}
-        {isButtonClicked && <BtnBanner courseWrapperBtn buttonText="Забронювати місце" />}
+
+        <div>
+          <BtnBanner buttonText="Забронювати місце" onClick={() => setIsFormOpen(true)} />
+          {isFormOpen && <FormWrapper />}
+        </div>
       </Wrapper>
-      <button className="courseProgram__wrapper_btn" onClick={handleClick}>відкрити всі модулі</button>
     </div>
   );
 }

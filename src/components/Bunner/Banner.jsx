@@ -42,9 +42,6 @@ export default function Banner() {
   return (
     <div className="title__banner">
       <div className="bannerCards">
-        <BannerGoldCard className="bannerCards__one" icon={vector}>
-          <p className="bannerCards__text--big">10 червня <p className="bannerCards__text--small">старт навчання</p></p> 
-        </BannerGoldCard>
           <BannerGoldCard className="bannerCards__two" icon={group}>
             <p className="bannerCards__text--big">ОНЛАЙН <p className="bannerCards__text--small">формат навчання</p></p> 
           </BannerGoldCard>

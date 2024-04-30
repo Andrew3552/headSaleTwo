@@ -35,11 +35,11 @@ export const item = [
         // subTitle: 'Фріланс',
         pay1: {
             text: 'Оплатити навчання',
-            link: 'https://secure.wayforpay.com/button/b3b3034105678'
+            link: 'https://secure.wayforpay.com/button/b16ed23f56345'
         },
         pay2: {
             text: 'В розстрочку без %',
-            link: 'https://secure.wayforpay.com/button/b3b3034105678'
+            link: 'https://secure.wayforpay.com/button/b16ed23f56345'
         },
         pay3: {
             text: 'Забронювати знижку',

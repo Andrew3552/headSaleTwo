@@ -1,7 +1,7 @@
 .title__banner {
   position: relative;
   overflow: hidden;
-padding-bottom: 100px;
+  padding-bottom: 100px;
 
   &_wrapper {
     display: flex;
@@ -735,7 +735,13 @@ padding-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(226, 27, 27);
+  background: linear-gradient(
+    46.4deg,
+    rgb(201, 151, 85) 0%,
+    rgb(241, 203, 155) 44.144%,
+    rgb(242, 218, 180) 59.355%,
+    rgb(201, 151, 85) 104.622%
+  );
   width: clamp(140px, 25vw, 250px);
   height: clamp(50px, 9vw, 80px);
   border-radius: clamp(5px, 1vw, 20px);
@@ -752,7 +758,7 @@ padding-bottom: 100px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     width: clamp(140px, 25vw, 300px);
-  height: clamp(50px, 9vw, 100px);
+    height: clamp(50px, 9vw, 100px);
   }
 
   @media (width > 680px) {
@@ -792,7 +798,7 @@ padding-bottom: 100px;
 }
 
 .bannerCards__text--big {
-  color: rgb(255, 255, 255);
+  color: rgb(9, 9, 9);
   text-transform: uppercase;
   font-size: 16px;
   font-family: 'Unbounded-400';
@@ -810,7 +816,7 @@ padding-bottom: 100px;
 .bannerCards__text--small {
   font-family: 'Unbounded-400';
   font-size: 11px;
-  color: rgb(99, 3, 3);
+  color: rgb(9, 9, 9);
 
   @media (width > 1200px) {
     font-size: 14px;

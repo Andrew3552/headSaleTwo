@@ -24,21 +24,25 @@
   }
 }
 
-.results__btn_container {
+.courseProgram__wrapper_block{
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &_btn {
-    padding: 10px 40px;
-    border-radius: 10px;
-    background: linear-gradient(126.77deg, rgb(247, 1, 0) -3.549%, rgb(149, 11, 20) 86.623%);
-  }
 
-  .left_icon,
-  .right_icon {
-    width: 30px;
-    height: 30px;
-    color: white;
-  }
+.courseProgram__wrapper.animated {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.courseProgram__wrapper.animated.show {
+  opacity: 1;
+  visibility: visible;
+  max-height: 2500px; /* Выберите значение, достаточное для покрытия максимальной высоты ваших элементов */
+  transform: scaleY(1);
 }

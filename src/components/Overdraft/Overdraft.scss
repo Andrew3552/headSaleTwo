@@ -22,14 +22,14 @@
     position: relative;
     @media (width > 768px) {
       flex-direction: row;
-      gap: 300px;
+      gap: 10px;
       align-items: center;
       justify-content: center;
 
     }
 
     &-text {
-        max-width: 900px;
+        max-width: 700px;
         
       &_parts {
         border-radius: 5px;
@@ -44,6 +44,7 @@
           font-size: 22px;
           line-height: 110%;
           margin-bottom: 97px;
+          max-width: 600px;
         }
       }
       &_container-percents {
@@ -78,6 +79,7 @@
         @media (width > 768px) {
           font-size: 32px;
           margin-top: 65px;
+          max-width: 600px;
         }
       }
 
@@ -118,6 +120,7 @@
         text-transform: uppercase;
         @media (width > 768px) {
           font-size: 32px;
+          max-width: 600px;
         }
       }
     }
@@ -132,7 +135,7 @@
       display: none;
       @media (width > 768px) {
         display: block;
-        width: 700px;
+        width: 600px;
       }
     }
 

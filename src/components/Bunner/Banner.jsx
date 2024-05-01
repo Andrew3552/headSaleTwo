@@ -5,7 +5,6 @@ import BannerGoldCard from './BannerGoldCard';
 import TitlePhoto from '../../assets/Photo.webp';
 import group from '../../assets/icons/Group 435.svg';
 import mask from '../../assets/icons/Mask group.svg';
-import vector from '../../assets/icons/Vector.svg';
 import AvaTg from '../../assets/Banner/AvaTg.webp';
 import avaDesc from '../../assets/Banner/avaDesc.webp';
 import airPlane1 from '../../assets/Banner/airPlane1.webp';

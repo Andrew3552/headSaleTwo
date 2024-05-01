@@ -47,7 +47,7 @@ export default function CourseProgram() {
           <Freelance highlightWord={highlightWord} className={classNames('animated', { show: isButtonClicked })} />
           <Busines highlightWord={highlightWord} className={classNames('animated', { show: isButtonClicked })} />
           <button className="courseProgram__wrapper_btn" onClick={() => setIsButtonClicked(!isButtonClicked)}>
-            {isButtonClicked ? 'Скрыть блоки' : 'Показать все блоки'}
+            {isButtonClicked ? 'Приховати блоки' : 'Відкрити всі модулі'}
           </button>
         </div>
       </Container>

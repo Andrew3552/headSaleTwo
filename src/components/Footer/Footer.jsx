@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer__container">
           <div className="footer__order">
             <div className="footer__center order">
-              <h2 className="footer__title">Контакти</h2>
+              <h2 className="footer__title contact">Контакти</h2>
               <a className="link telegram" href="https://t.me/Trafic_Wolves_University" target="_blank">
                 Telegram
               </a>
@@ -29,8 +29,27 @@ export default function Footer() {
             <div className="order">
               <h2 className="footer__title">Документи</h2>
               <ul className="footer__list_info">
-                <li>Політика конфіденційності</li>
-                <li>Публічна оферта</li>
+                <li>
+                  {' '}
+                  <a
+                    className='footer__link'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://docs.google.com/document/d/1e0SKkUG1RikmeVIRJ6PQXRZ1LKaXPgFLWtLFJqOCc1k/edit"
+                  >
+                    Політика конфіденційності
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className='footer__link'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://docs.google.com/document/d/1nCaf6t5_qMxcdDCWVhFi4jGqIvY_p3vt_99vBbu5BQM/edit#heading=h.np51cj9pq34p"
+                  >
+                    Публічна оферта
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

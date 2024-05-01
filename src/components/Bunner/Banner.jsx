@@ -92,7 +92,7 @@ export default function Banner() {
           <img src={TgGray5} className="title__banner_wrapper_TgGray5" alt="" />
           <img src={TgGray6} className="title__banner_wrapper_TgGray6" alt="" />
           <div className="title__banner_wrapper_text_two">
-            <p className="title__banner_wrapper_text">Власник каналів з аудиторією 1.7+ млн</p>
+            <p className="title__banner_wrapper_text">Власник мережі каналів з аудиторією 1.7+ млн</p>
           </div>
           <div className="title__banner_wrapper_text_three">
             <p className="title__banner_wrapper_text"> Агенція Traffic Wolves</p>

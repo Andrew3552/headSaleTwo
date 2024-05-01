@@ -69,7 +69,7 @@ export const item = [
         lesson9HighLight: 'Урок 9:',
         lesson10: 'Урок 10: ТГ боти для привітань',
         lesson10HighLight: 'Урок 10:',
-        lesson11: 'Урок 11: ТГ  Додаткові сервіси та боти для роботи з ТГ',
+        lesson11: 'Урок 11: Додаткові сервіси та боти для роботи з ТГ',
         lesson11HighLight: 'Урок 11:',
     }
 ]
@@ -171,7 +171,7 @@ export const item3 = [
         lesson4HighLight: 'Урок 4:',
         lesson5: 'Урок 5: Монтаж і уніфікація відео',
         lesson5HighLight: 'Урок 5:',
-        lesson6: 'Урок 6: Перелив аудиторії з Інстаграм та ФБ ТІКТОК',
+        lesson6: 'Урок 6: Перелив аудиторії з Інстаграм та ФБ Тik-Tok',
         lesson6HighLight: 'Урок 6:',
     },
     {

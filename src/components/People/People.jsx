@@ -58,7 +58,7 @@ import './People.scss'
            </div>
            <p className="box__text">
              І хочеш мати вільний графік, подорожувати країною та світом і
-             <span className="gold_gradient">жити , як хочеш сам</span>
+             <p className="gold_gradient">жити , як хочеш сам</p>
            </p>
          </div>
          <div className="box__five">
@@ -86,7 +86,7 @@ import './People.scss'
          </div>
          <div className="box__seven">
            <div className="img__container">
-             <img className="box__img" src={FreelanceImg} alt="freelance" />
+             <img className="box__img seven" src={FreelanceImg} alt="freelance" />
              <h2 className="title__box">Фрілансер</h2>
            </div>
            <p className="box__text">

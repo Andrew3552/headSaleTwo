@@ -19,7 +19,7 @@
   }
 
   &__title {
-    text-align: center;
+    text-align: right;
     margin-bottom: 33px;
 
     @media (width<=430px) {
@@ -73,9 +73,8 @@
     list-style: none;
     padding: 0 0 29px;
     font-size: 16px;
-    text-align: center;
+    text-align: end;
     text-decoration: underline;
-    justify-content: center;
     & li {
       padding: 0 5px 23px;
     }
@@ -107,6 +106,10 @@ display: flex;
   }
 }
 
+.contact{
+  text-align: center;
+}
+
 .link {
   display: flex;
   text-decoration: none;
@@ -134,4 +137,10 @@ display: flex;
 .link.instagram {
   background-color: #ffffff;
   color: #0a0a0a;
+}
+
+.footer__link{
+  text-decoration: none;
+  font-family: 'Unbounded-400';
+  color: rgb(255, 255, 255);
 }

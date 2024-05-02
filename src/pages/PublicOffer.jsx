@@ -7,7 +7,7 @@ export default function PublicOffer() {
         <h1 className="publicOffer__wrapper_title"> ПУБЛІЧНИЙ ДОГОВІР (ОФЕРТА)</h1>
         <p>на користування послугами ФОП Смірнов Ростислав Володимирович</p>
 
-        <div>
+        <div className="publicOffer__wrapper_container">
           <h2 className="publicOffer__title">1. ВСТУП</h2>
           <p>1.1. Цей документ є публічною пропозицією до укладення договору на зазначених нижче умовах (офертою).</p>
           <p>

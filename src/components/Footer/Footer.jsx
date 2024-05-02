@@ -1,3 +1,5 @@
+import {Link } from 'react-router-dom';
+
 import Container from '../WrapperList/Container';
 import './Footer.scss';
 
@@ -30,15 +32,10 @@ export default function Footer() {
               <h2 className="footer__title">Документи</h2>
               <ul className="footer__list_info">
                 <li>
-                  {' '}
-                  <a
-                    className='footer__link'
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://docs.google.com/document/d/1e0SKkUG1RikmeVIRJ6PQXRZ1LKaXPgFLWtLFJqOCc1k/edit"
-                  >
+                
+                  <Link to="/privacy-policy">
                     Політика конфіденційності
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

@@ -1,4 +1,4 @@
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Container from '../WrapperList/Container';
 import './Footer.scss';
@@ -32,20 +32,10 @@ export default function Footer() {
               <h2 className="footer__title">Документи</h2>
               <ul className="footer__list_info">
                 <li>
-                
-                  <Link to="/privacy-policy">
-                    Політика конфіденційності
-                  </Link>
+                  <Link className='footer__link' to="/privacy-policy">Політика конфіденційності</Link>
                 </li>
                 <li>
-                  <a
-                    className='footer__link'
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://docs.google.com/document/d/1nCaf6t5_qMxcdDCWVhFi4jGqIvY_p3vt_99vBbu5BQM/edit#heading=h.np51cj9pq34p"
-                  >
-                    Публічна оферта
-                  </a>
+                  <Link className='footer__link' to="/public-offer">Публічна оферта</Link>
                 </li>
               </ul>
             </div>

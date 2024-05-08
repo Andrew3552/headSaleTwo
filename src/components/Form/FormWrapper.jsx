@@ -4,14 +4,16 @@ import cn from 'classnames';
 import * as Yup from 'yup';
 import 'react-phone-input-2/lib/style.css';
 import PhoneInput from 'react-phone-input-2';
+import Modal from '../Modal/Modal';
 
 import './FormWrapper.scss';
 
 export default function FormWrapper(props) {
-  const { className, formWay, formTariff, formTariffInput, formTariffSubmit, formInputPhone,formBanner,formDoubtsWrapper } = props;
+  const { className, formWay, formTariff, formTariffInput, formTariffSubmit, formInputPhone,formBanner,formDoubtsWrapper, setIsSubmitted } = props;
 
   const [errors, setErrors] = useState({});
   const [formValues, setFormValues] = useState({ name: '', tg: '', phone: '' });
+
 
   const validationSchema = Yup.object({
     name: Yup.string().min(2, 'Имя должно содержать минимум 2 символа').required('Обязательное поле'),
@@ -33,7 +35,8 @@ export default function FormWrapper(props) {
       setFormValues({ name: '', tg: '', phone: '' });
       // Очищаем состояние ошибок
       setErrors({});
-      window.open('https://t.me/smirnovrostyslav_bot?start=w24601476', '_blank');
+      
+      setIsSubmitted(true);
     } catch (error) {
       // Если валидация не прошла, показываем ошибку и обновляем состояние ошибок
       setErrors({ ...errors, [error.path]: error.message });
@@ -94,6 +97,8 @@ export default function FormWrapper(props) {
           className={cn('form__input', { form__input_submit: formTariffSubmit })}
         />
       </form>
+
+      {/* <Modal isOpen={isSubmitted} onClick={() => setIsSubmitted(false)} /> */}
 
       <form
         action="https://docs.google.com/forms/d/e/1FAIpQLSeFe3MVn-2lclBpVYknvOwH3D4fdBweqjFzsQnbzwYnFz2vuw/formResponse"

@@ -16,6 +16,7 @@ export default function BtnBanner(props) {
     courseWrapperBtn,
     bannerBtnWrapper,
     btnBanner,
+    setIsSubmitted
   } = props;
   const [isFormOpen, setIsFormOpen] = useState(false);
   const handleButtonClick = () => {
@@ -45,7 +46,7 @@ export default function BtnBanner(props) {
         >
           {buttonText}
         </button>
-        {isFormOpen && <FormWrapper formDoubtsWrapper formBanner formInputPhone formWay />}
+        {isFormOpen && <FormWrapper setIsSubmitted={setIsSubmitted} formDoubtsWrapper formBanner formInputPhone formWay />}
       </div>
     </div>
   );

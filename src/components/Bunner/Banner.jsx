@@ -1,6 +1,9 @@
+import { useState} from 'react';
+
 import Container from '../WrapperList/Container';
 import BtnBanner from './BtnBanner/BtnBanner';
 import BannerGoldCard from './BannerGoldCard';
+import Modal from '../Modal/Modal';
 
 import TitlePhoto from '../../assets/Photo.webp';
 import group from '../../assets/icons/Group 435.svg';
@@ -38,6 +41,9 @@ import DollarDeskRightUp from '../../assets/Banner/DollarDeskRightUp.png';
 import './Banner.scss';
 
 export default function Banner() {
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <div className="title__banner">
       <div className="bannerCards">
@@ -81,7 +87,7 @@ export default function Banner() {
           <img src={airPlane4} className="title__banner_wrapper_airplane4" alt="" />
           <img src={airPlane5} className="title__banner_wrapper_airplane5" alt="" />
           {/* <img src={airplane6} className="title__banner_wrapper_airplane6" alt="" /> */}
-          <img src={airPlane7} className="title__banner_wrapper_airplane7" alt="" />
+          {/* <img src={airPlane7} className="title__banner_wrapper_airplane7" alt="" /> */}
           <img src={TgBlue} className="title__banner_wrapper_TgBlue" alt="" />
           <img src={TgBlueDesk} className="title__banner_wrapper_TgBlueDesk" alt="" />
           <img src={TgGray1} className="title__banner_wrapper_TgGray1" alt="" />
@@ -100,7 +106,8 @@ export default function Banner() {
             <p className="title__banner_wrapper_text">СМІРНОВ про Телеграм 141к підписників</p>
           </div>
         </div>
-        <BtnBanner btnBanner bannerBtnWrapper buttonText="Взяти участь" />
+        <BtnBanner setIsSubmitted={setIsSubmitted} btnBanner bannerBtnWrapper buttonText="Взяти участь" />
+        <Modal isOpen={isSubmitted}  onClick={() => setIsSubmitted(false)} />
       </Container>
     </div>
   );

@@ -1,0 +1,56 @@
+// Modal.scss
+
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  width: 100vw; // ширина на всю ширину экрана
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(-43.66deg, rgb(18, 18, 18) 22.955%, rgb(226, 27, 27) 96.674%);
+  //   border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  // z-index: 9999;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.modal-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-close {
+  background: linear-gradient(
+    46.4deg,
+    rgb(201, 151, 85),
+    rgb(241, 203, 155) 44.246%,
+    rgb(242, 218, 180) 59.492%,
+    rgb(201, 151, 85) 104.864%
+  );
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

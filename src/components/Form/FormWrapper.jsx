@@ -98,7 +98,6 @@ export default function FormWrapper(props) {
         />
       </form>
 
-      {/* <Modal isOpen={isSubmitted} onClick={() => setIsSubmitted(false)} /> */}
 
       <form
         action="https://docs.google.com/forms/d/e/1FAIpQLSeFe3MVn-2lclBpVYknvOwH3D4fdBweqjFzsQnbzwYnFz2vuw/formResponse"

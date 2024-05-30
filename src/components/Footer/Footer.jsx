@@ -24,8 +24,8 @@ export default function Footer() {
             </div>
             <ul className="footer__list_contact order">
               <li>ФОП: Смірнов Ростислав Володимирович</li>
-              <li>ЄДРПОУ: 3384601316</li>
-              <li>IBAN: UA653220010000026000300007894 АТ «УНІВЕРСАЛ БАНК»</li>
+              <li>ЄДРПОУ: 2520518503</li>
+              <li>IBAN: UA243220010000026005340067231 АТ «УНІВЕРСАЛ БАНК»</li>
               <li>info@tele-star.com.ua</li>
             </ul>
             <div className="order">
